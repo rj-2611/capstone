@@ -1,0 +1,5 @@
+Aws Lambda and Dynamo Db (Insert into dynamo DB table using lambda)
+https://www.javacodegeeks.com/2016/12/aws-lambdajava-dynamodb-api-gateway-integration.html
+
+Reading inputs from a form(lambda node js, API gateway)
+https://blog.summercat.com/using-aws-lambda-and-api-gateway-as-html-form-endpoint.html
