@@ -40,6 +40,7 @@ public class UpperCaseLambdaHandler implements Function<APIGatewayProxyRequestEv
 	                .withString("rating", rating[1]);
 	                
 	        table.putItem(item);
+	        
 	        logger.info("Value " + rating[1] + " set into rating field.");
 	        String serviceRating = "";
 	        if(rating[1].equals("1")) {
@@ -51,7 +52,7 @@ public class UpperCaseLambdaHandler implements Function<APIGatewayProxyRequestEv
 	        else {
 	        	serviceRating = "Excellent";
 	        }
-	        String response = "<!DOCTYPE html><div style=\"text-align:center;\"><H3>Thanks for rating our service as: "+ serviceRating + "</H3><br><p>Your feedback is important to us</p><br>Go back to <a href=\"#\">Home</a></div>";
+	        String response = "<!DOCTYPE html><div style=\"text-align:center;\"><H3>Thanks for rating our service as: "+ serviceRating + "</H3><br><p>Your feedback is important to us</p><br>Go back to <a href=\"https://capstone-project-1.s3.ap-south-1.amazonaws.com/home.html\">Home</a></div>";
 	        
 			logger.info("Success");
 			return response;
